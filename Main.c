@@ -607,6 +607,7 @@ bool encipherFile(CipherKeyFile* cipherKeyFile)
 	if (status == 0)
 	{
 		fputs(result, fpOutput);
+		fclose(fpOutput);
 	}
 
 	/*
